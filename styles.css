@@ -1,0 +1,90 @@
+:root {
+    --image-width: 1862px;
+    --image-height: 2792px;
+}
+
+@font-face {
+    font-family: 'Norse-Bold';
+    src: url('Norse-Bold.otf') format('opentype');
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #F9FAFB;
+    font-size: 14px;
+}
+
+body {
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    padding-left: 5%;
+    padding-right: 5%;
+    align-content: center;
+}
+
+#background-photo {
+    margin: 0;
+    padding: 0;
+    float: left;
+    position: relative;
+    width: 40%;
+    height: 1000px;
+}
+
+#background-photo > img {
+    margin: 0;
+    padding: 0;
+    height: 1000px;
+}
+
+.photo-caption {
+    color: white;
+    position: relative;
+    bottom: 50px;
+    width: 100%;
+    text-align: center;
+}
+
+.photo-caption a {
+    color: white;
+}
+
+#odin-banner {
+    display: flex;
+    flex-flow: row;
+    position: absolute;
+    top: 200px;
+    width: 100%;
+    background-color: rgba(14, 13, 13, 0.541);
+    align-content: center;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+#odin-banner p {
+    margin: auto 0;
+    font-family: 'Norse-Bold';
+    color: white;
+    font-size: 6rem;
+}
+
+#odin-banner img {
+    height: 130px;
+}
+
+#form-content {
+    background-color: #F9FAFB;
+    z-index: 1;
+    align-content: center;
+    height: 1000px;
+    padding: 50px;
+}
+
+@media (min-width: 1665px) {
+    #background-photo {
+        width: 666px;
+    }
+}
