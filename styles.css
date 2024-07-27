@@ -83,11 +83,46 @@ body {
     width: 60%;
 }
 
+#form-content > h1 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-left: 50px;
+}
+
+#form-content h1:first-of-type {
+    margin-bottom: 0;
+}
+
+#form-content h1:nth-of-type(2) {
+    margin-top: 0;
+}
+
 
 fieldset {
     display: flex;
     flex-direction: row;
     border: none;
+    padding: 0;
+    font-size: 1rem;
+}
+
+input {
+    font-size: 1.2rem;
+    border: solid #E5E7EB;
+    border-width: 1px;
+    border-radius: 2px;
+    height: 2rem;
+} 
+
+input:focus {
+    outline: none !important;
+    border: 1px solid #1D4ED8;
+    box-shadow: 5px 5px 5px #DADBDC;
+}
+
+input:required:invalid {
+    outline: none !important;
+    border: 1px solid #B91C1C;
 }
 
 label {
@@ -97,22 +132,81 @@ label {
 .form-col {
     display: flex;
     flex-direction: column;
-    width: 50%;
-    padding: 5px;
+    width: 40%;
 }
 
 .form-row {
     display: flex;
     flex-direction: column;
+    margin-top: 10px;
+    margin-right: 60px;
 }
 
 #form-background {
     background-color: white;
-    box-shadow: 5px 5px 5px grey;
+    box-shadow: 5px 5px 5px #DADBDC;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-top: 10px;
+    padding-bottom: 40px;
+}
+
+#form-background h1 {
+    padding-bottom: 20px;
+}
+
+#form-background > h1, #form-background > fieldset {
+    margin-left: 50px;
+    justify-content: start;
+}
+
+h1 {
+    font-size: 1.7rem;
+}
+
+#main-form {
+    color: #1F2937;
+}
+
+button {
+    background-color: #596D48;
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    padding: 20px 60px;
+    margin-left: 50px;
+    box-shadow: 5px 5px 5px #DADBDC;
+}
+
+#main-form p {
+    margin-left: 50px;
+    margin-top: 30px;
+    font-size: 1.3rem;
+}
+
+#main-form > p > a {
+    color: #596D48;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.error-mess {
+    font-size: .8rem;
+    color: #B91C1C;
 }
 
 @media (min-width: 1665px) {
     #background-photo {
         width: 666px;
     }
+}
+
+@media (max-width: 1000px) {
+    
+    #form-content {
+        width: 1000px;
+    }
+    
 }

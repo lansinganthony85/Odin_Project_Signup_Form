@@ -5,17 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Odin Sign-up Form</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="scripts.js"></script>
+    <script src="scripts.js" defer></script>
 </head>
 <body>
     <div id="background-photo">
         <div id="odin-banner">
-            <img src="odin-lined.png" alt="">
+            <img src="odin-lined.png" alt="Odin Logo">
             <p>ODIN</p>
         </div>
-        <img src="https://images.unsplash.com/photo-1585202900225-6d3ac20a6962?q=80&w=1862&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">   
+        <img src="https://images.unsplash.com/photo-1585202900225-6d3ac20a6962?q=80&w=1862&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Fern leaves in a forest">   
         <p class="photo-caption">
-            Photo by <a href="http://">Halie West</a> on <a href="http://">Unsplash</a>
+            Photo by <a href="https://unsplash.com/@haliewestphoto">Halie West</a> on <a href="https://unsplash.com/">Unsplash</a>
         </p>
     </div>
     <div id="form-content">
@@ -31,39 +31,45 @@
 
                     <div class="form-col">
                         <div class="form-row">
-                            <label for="first_name">First Name</label>
-                            <input type="text" name="first_name" id="first_name">
+                            <label for="first_name">FIRST NAME</label>
+                            <input type="text" name="first_name" id="first_name" placeholder="Joe">
+                            <div class="error-mess">* Please enter your first name</div>
                         </div>   
                         
                         <div class="form-row">
-                            <label for="email">Email</label>
-                            <input type="email" name="email" id="email">
+                            <label for="email">EMAIL</label>
+                            <input type="email" name="email" id="email" placeholder="email@example.com">
+                            <div class="error-mess">* Please enter a valid email</div>
                         </div>
 
                         <div class="form-row">
-                            <label for="password">Password</label>
+                            <label for="password">PASSWORD</label>
                             <input type="password" name="password" id="password">
+                            <div class="error-mess">* Please enter a password</div>
                         </div>
                     </div>
                     
                     <div class="form-col">
                         <div class="form-row">
-                            <label for="last_name">Last Name</label>
-                            <input type="text" name="last_name" id="first_name">
+                            <label for="last_name">LAST NAME</label>
+                            <input type="text" name="last_name" id="last_name" placeholder="Smith">
+                            <div class="error-mess">* Please enter your last name</div>
                         </div>
 
                         
 
                         <div class="form-row">
-                            <label for="phone_number">Phone Number</label>
-                            <input type="number" name="phone_number" id="phone_number">
+                            <label for="phone_number">PHONE NUMBER</label>
+                            <input type="tel" name="phone_number" id="phone_number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="555-555-5555">
+                            <div class="error-mess">* Please enter your phone</div>
                         </div>
 
                         
 
                         <div class="form-row">
-                            <label for="pass_confirm">Confirm Password</label>
+                            <label for="pass_confirm">CONFIRM PASSWORD</label>
                             <input type="password" name="pass_confirm" id="pass_confirm">
+                            <div class="error-mess">* Passwords must match</div>
                         </div>
                     </div> 
                 </fieldset>
