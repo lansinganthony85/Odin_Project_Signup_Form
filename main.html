@@ -24,48 +24,50 @@
         <h1>You <em>know</em> you want to.</h1>
         <form action="" id="main-form">
 
-            <h1>Let's do this!</h1>
+            <div id="form-background">
+                <h1>Let's do this!</h1>
 
-            <fieldset>
+                <fieldset>
 
-                <div class="form-col">
-                    <div class="form-row">
-                        <label for="first_name">First Name</label>
-                        <input type="text" name="first_name" id="first_name">
-                    </div>   
+                    <div class="form-col">
+                        <div class="form-row">
+                            <label for="first_name">First Name</label>
+                            <input type="text" name="first_name" id="first_name">
+                        </div>   
+                        
+                        <div class="form-row">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email">
+                        </div>
+
+                        <div class="form-row">
+                            <label for="password">Password</label>
+                            <input type="password" name="password" id="password">
+                        </div>
+                    </div>
                     
-                    <div class="form-row">
-                        <label for="email">Email</label>
-                        <input type="email" name="email" id="email">
-                    </div>
+                    <div class="form-col">
+                        <div class="form-row">
+                            <label for="last_name">Last Name</label>
+                            <input type="text" name="last_name" id="first_name">
+                        </div>
 
-                    <div class="form-row">
-                        <label for="password">Password</label>
-                        <input type="password" name="password" id="password">
-                    </div>
-                </div>
-                
-                <div class="form-col">
-                    <div class="form-row">
-                        <label for="last_name">Last Name</label>
-                        <input type="text" name="last_name" id="first_name">
-                    </div>
+                        
 
-                    
+                        <div class="form-row">
+                            <label for="phone_number">Phone Number</label>
+                            <input type="number" name="phone_number" id="phone_number">
+                        </div>
 
-                    <div class="form-row">
-                        <label for="phone_number">Phone Number</label>
-                        <input type="number" name="phone_number" id="phone_number">
-                    </div>
+                        
 
-                    
-
-                    <div class="form-row">
-                        <label for="pass_confirm">Confirm Password</label>
-                        <input type="password" name="pass_confirm" id="pass_confirm">
-                    </div>
-                </div> 
-            </fieldset>
+                        <div class="form-row">
+                            <label for="pass_confirm">Confirm Password</label>
+                            <input type="password" name="pass_confirm" id="pass_confirm">
+                        </div>
+                    </div> 
+                </fieldset>
+            </div>  
             <button type="submit" id="account_create">Create Account</button>
             <p>Already have an account? <a href="http://">Log in</a></p>
         </form>
